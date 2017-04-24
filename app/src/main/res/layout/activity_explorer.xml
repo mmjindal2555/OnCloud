@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.iem.manish.oncloud.Explorer">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/primary">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="MOVE TO"
+                android:id="@+id/transfer_title"
+                android:gravity="center"
+                android:textSize="26dp"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/transfer_path_text_view"
+            android:background="#ededed"
+            android:textColor="#000000"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:singleLine="true"
+            android:paddingTop="5dp" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mov_list_view"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffff"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="false"
+            android:id="@+id/linearLayout"
+            android:layout_below="@+id/mov_list_view">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="CANCEL"
+                android:id="@+id/cancel_transfer"
+                android:layout_weight="1"
+                android:textColor="@color/md_red_600"
+                android:background="#ffffff" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="BACK"
+                android:id="@+id/transfer_back_button"
+                android:layout_weight="1"
+                android:textColor="@color/md_red_600"
+                android:background="#ffffff" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:id="@+id/transfer_button"
+                android:layout_weight="1"
+                android:textColor="@color/md_red_600"
+                android:background="#ffffff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

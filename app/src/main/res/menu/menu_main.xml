@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.iem.manish.oncloud.MainActivity">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="1" app:showAsAction="never" />
+    <item
+        android:id="@+id/search"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_search_white_36dp"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:title="@string/action_menu_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <item
+        android:id="@+id/action_change_view_style"
+        android:title="@string/action_change_view_style"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_view_module_white_36dp">
+    </item>
+    <item android:id="@+id/action_change_password" android:title="@string/action_change_password"
+    android:orderInCategory="3" app:showAsAction="never" />
+    <item android:id="@+id/action_logout" android:title="@string/action_logout"
+        android:orderInCategory="4" app:showAsAction="never" />
+</menu>

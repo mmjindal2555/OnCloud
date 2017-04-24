@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fontpath="http://schemas.android.com/apk/res-auto"
+    android:padding="3dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:id="@+id/fileIcon"
+            android:src="@drawable/ic_file_50dp"
+            android:clickable="false"
+            android:adjustViewBounds="true"
+            android:background="#ffffff"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:cropToPadding="false"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_alignTop="@+id/fileIcon"
+            android:layout_alignBottom="@+id/fileIcon"
+            android:layout_toRightOf="@+id/fileIcon">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/filename"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="2dp"
+                android:paddingTop="0dp"
+                android:paddingRight="2dp"
+                android:gravity="bottom"
+                android:textColor="#000000"
+                android:singleLine="true"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/lastmodified"
+                android:layout_gravity="center_vertical|left"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/folderText"
+            android:layout_alignTop="@+id/fileIcon"
+            android:layout_alignBottom="@+id/fileIcon"
+            android:layout_toRightOf="@+id/fileIcon"
+            android:gravity="center_vertical"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/translucentChecked"
+            android:layout_alignTop="@+id/fileIcon"
+            android:layout_alignBottom="@+id/fileIcon"
+            android:background="#384483c4"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/item_checked_tick"
+            android:layout_alignTop="@+id/fileIcon"
+            android:layout_alignBottom="@+id/fileIcon"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/checked_50px"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

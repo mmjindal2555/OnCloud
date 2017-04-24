@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">On Cloud</string>
+
+    <string name="hint">File Name</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_sync">Sync</string>
+    <string name="action_change_password">Change Password</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_enter_file_name_dialog">EnterFileNameDialog</string>
+    <string name="title_activity_file_options">FileOptions</string>
+    <string-array name="list_options">
+        <item>Open</item>
+        <item>Rename</item>
+        <item>Delete</item>
+        <item>Copy</item>
+        <item>Move</item>
+        <item>Share</item>
+    </string-array>
+    <string name="title_activity_enter_folder_name_dialog">EnterFolderNameDialog</string>
+    <string name="string_search">Search</string>
+    <string name="title_activity_search">SearchActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_change_view_style">Grid View</string>
+    <string name="action_menu_search">Search</string>
+    <string name="title_activity_explorer">Explorer</string>
+    <string name="title_activity_authentication">AuthenticationActivity</string>
+</resources>

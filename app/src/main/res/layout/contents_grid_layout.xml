@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:background="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:background="#ffffffff"
+    android:elevation="3dp"
+    >
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/folder_grid_contents"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/relativeLayout"
+        android:numColumns="3"
+        android:visibility="invisible"
+        android:focusable="false"
+        android:clickable="false" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:id="@+id/content_image"
+        android:layout_alignParentTop="true" android:layout_alignParentStart="true"
+        android:scaleType="center"
+        android:adjustViewBounds="true" android:cropToPadding="true"
+        android:src="@drawable/user_male" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/content_image"
+        android:background="@drawable/white_bottom_shade"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="3dp"
+        android:padding="3dp"
+        android:elevation="3dp"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/grid_title"
+            android:textColor="#c42600"
+            android:singleLine="true"
+            android:gravity="center"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/translucent_grid_checked"
+        android:layout_alignParentTop="true" android:layout_alignParentStart="false"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true" android:cropToPadding="true"
+
+        android:visibility="invisible"
+        android:layout_alignParentEnd="false"
+        android:layout_alignTop="@+id/content_image"
+        android:background="#384483c4"
+        android:layout_alignBottom="@+id/content_image" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tick_grid"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:src="@drawable/checked_50px"
+        android:layout_marginTop="10dp"
+        android:layout_alignRight="@+id/content_image"
+        android:layout_marginRight="10dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>
